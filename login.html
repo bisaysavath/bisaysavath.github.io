@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Log In</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/signup.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src = "javascripts/app.js"></script>
+    <script src = "javascripts/signup.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <h1>PAPER PLANE</h1>
+                <img src="images/paper-plane.png" width="70" height="70" alt="paper plane" />
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <!-- <a href="signup.html">Sign up</a> -->
+                <a class="active" href="#">Log in</a>
+                <a href="help.html">Help</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- FORM -->
+        <div class="form">
+            <ul class="tab-group">
+                <li class="tab active"><a href="#login">Log In</a></li>
+                <li class="tab"><a href="#signup">Sign Up</a></li>
+            </ul>
+             <div class="tab-content">
+            <!--- LOGIN -->
+            <div id="login">
+                <!--<form action="/" method="post">-->
+                <form>
+                    <h2>Email Address </h2>
+                    <div class="field-wrap">
+                        <input type="email" id="loginEmail" placeholder="Email addresss*" required autocomplete="off" />
+                    </div>
+                    <hr>
+
+                    <h2>Password</h2>
+                    <div class="field-wrap">
+                        <input type="password"  id="loginPassword" placeholder="Password*" required autocomplete="off" />
+                    </div>
+                    <hr>
+                    <button type="submit" class="button button-block" />Get Started</button>
+                </form>
+            </div>
+            <!-- END LOGIN -->
+            <!-- SIGN UP -->
+            <div id="signup">
+                <!--<form id="newUser" action="/" method="post">-->
+                <form>
+
+                    <h2>First Name</h2>
+                    <div class="field-wrap">
+                        <input type="text" id="fname" placeholder="First Name*" required autocomplete="off" />
+                    </div>
+                    <hr>
+
+                    <h2>Last Name</h2>
+                    <div class="field-wrap">
+                        <input type="text" id="lname" placeholder="Last Name*" required autocomplete="off" />
+                    </div>
+                    <hr>
+
+                    <h2>Email Address </h2>
+                    <div class="field-wrap">
+                        <input type="email" id="email" placeholder="Email addresss*" required autocomplete="off" />
+                    </div>
+                    <hr>
+
+                    <h2>Password</h2>
+                    <div class="field-wrap">
+                        <input type="password" id="password" placeholder="Password*" required autocomplete="off" />
+                    </div>
+                    <hr>
+
+                    <h2>Pick a username</h2>
+                    <h3>http://paperplane.me/</h3>
+                    <div class="field-wrap">
+                        <input type="text" id="username" required placeholder=" username*" autocomplete="off" />
+                    </div>
+                    <h3>This is going to be your personal link, to share your profile with other people.</h3>
+                    <hr>
+
+                    <h2>Job Title</h2>
+                    <div class="field-wrap">
+                        <input type="text" id="jobTitle" placeholder="Software Engineer*" required autocomplete="off" />
+                    </div>
+                    <hr>
+
+                    <h2>Job Tags</h2>
+                    <div class="field-wrap">
+                        <input type="text" id="tags" placeholder="Web Developer, Data Scientist" required autocomplete="off" />
+                    </div>
+                    <hr>
+
+                    <h2>Profile Picture</h2>
+                    <div class="field-wrap">
+                        <input type="url" id="profilePic" placeholder="image URL" required autocomplete="off" />
+                    </div>
+                    <hr>
+                    
+                    <h2>Twitter Handle</h2>
+                    <div class="field-wrap">
+                        <input type="url" id="twitter" placeholder="@yourhandle" required autocomplete="off" />
+                    </div>
+                    <hr>
+
+                    <h2>Facebook</h2>
+                    <div class="field-wrap">
+                        <input type="url" id="facebook" placeholder="@yourfb" required autocomplete="off" />
+                    </div>
+                    <hr>
+                    <button type="submit" class="button button-block">Get Started</button>
+                </form>
+            </div>
+            <!-- END SIGN UP -->
+            </div>
+        </div>
+        <!-- END FORM -->
+
+    </main>
+
+    <footer>
+        <div class="address">
+            <h3>Location</h3>
+            <a href="https://www.google.com/maps/place/California+State+University+Fullerton/@33.8829226,-117.8869261,15z/data=!4m6!1m3!3m2!1s0x0:0x2b9810bbb94af355!2sCalifornia+State+University+Fullerton!3m1!1s0x0:0x2b9810bbb94af355">
+                <h4>Cal State Fullerton</h4>
+                <p>800 N State College Blvd</p>
+                <p>Fullerton</p>
+                <p>CA 92831</p>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Introverted Ibis | Spring 2016</p>
+        </div>
+    </footer>
+</body>
+
+</html>

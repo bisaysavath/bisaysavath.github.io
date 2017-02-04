@@ -1,0 +1,160 @@
+body header {
+  background: #2C3E50;
+  height: 100px;
+}
+
+body header .container {
+  width: 855px;
+  margin: auto;
+}
+
+body header h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  float: left;
+  padding: 40px 0 0 0;
+}
+
+body header a h1:hover {
+  color: #268AC0;
+}
+
+body header nav {
+  float: right;
+}
+
+body header nav .active {
+  color: #268AC0;
+}
+
+body header img {
+  padding: 15px 10px 10px 10px;
+}
+
+body header nav {
+  padding: 40px 0 0 0;
+}
+
+body header nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: white;
+  padding: 0 3px 0 3px;
+  text-decoration: none;
+}
+
+body header nav a:hover {
+  color: #268AC0;
+}
+
+main .container {
+  width: 1000px;
+  margin: auto;
+}
+
+main .container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.3em;
+  padding: 20px 0 20px 0;
+  color: #2C3E50;
+  margin: auto;
+  text-align: center;
+}
+
+main h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  line-height: 150%;
+}
+
+main h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  line-height: 150%;
+}
+
+main h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  line-height: 150%;
+}
+
+main h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  line-height: 150%;
+}
+
+main h7 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  line-height: 150%;
+}
+
+main .container p {
+  font-size: 1em;
+  margin: auto;
+  line-height: 100%;
+}
+
+footer {
+  clear: both;
+  height: 200px;
+  background: #2C3E50;
+}
+
+footer .address {
+  width: 205px;
+  margin: auto;
+}
+
+footer .address a {
+  text-decoration: none;
+}
+
+footer .address h8 {
+  font-family: "Montserrat", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+footer .address a h4 {
+  font-family: "Lato", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+footer .address a p {
+  font-family: "Lato", serif;
+  font-weight: bold;
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+footer .copyright {
+  background: #233140;
+  height: 50px;
+}
+
+footer .copyright p {
+  color: white;
+  margin: auto;
+  font-family: "Lato", serif;
+  text-align: center;
+  padding: 15px 0 0 0;
+}

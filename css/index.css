@@ -1,0 +1,71 @@
+
+/*landing page*/
+.icons{
+	width:60%;
+	margin-left:35%;
+	}
+.icons .camera {
+	width:20%;
+	float:left;
+	margin-bottom:10px;
+
+}
+.icons .share {
+	width:20%;
+	float:left;
+}
+.icons .share p {
+	text-align:center;
+}
+.icons .network {
+	width:20%;
+	float:left;
+
+}
+.icons .network p {
+	text-align:center;
+}
+#sign_up{
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #18BC9C;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left:45%;
+  margin-bottom:12px;
+}
+#sign_up:hover {
+	background-color: #268AC0;
+}
+
+#sign_up:active {
+  background-color: #268AC0;
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+}
+
+.container .info a{
+	color:#000000;
+	text-decoration:none;
+}
+.container .info p, .container .info ul li {
+    font-family: "Raleway", sans-serif;
+	text-align:center;
+	font-style:italic;
+	margin-bottom:10px;
+	font-size:1.5em;
+}
+
+.info p a:hover {
+    text-decoration: underline;
+}
+
+div.icons p {
+    font-family: "Raleway", sans-serif;
+}
