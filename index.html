@@ -1,83 +1,46 @@
 <!doctype html>
 <html>
   <head>
-    <title>Home</title>
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <title>ng-book 2: Inventory App</title>
+    <link rel="icon" type="image/png" href="resources/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="resources/images/favicon.ico" />
+    <!-- Libraries -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-
-    <meta charset="utf-8">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="resources/vendor/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-
   <body>
-    <header>
-      <div class="container">
-        <a href="#">
-          <h1>PAPER PLANE</h1>
-          <img src="images/paper-plane.png" width="70" height="70" alt="paper plane"/>
+
+    <!-- Configure System.js, our module loader -->
+    <script src="resources/systemjs.config.js"></script>
+    <script>
+      System.import('app.js')
+            .then(null, console.error.bind(console));
+    </script>
+
+    <!-- Menu Bar -->
+    <div class="ui menu">
+      <div class="ui container">
+        <a href="#" class="header item">
+          <img class="logo" src="resources/images/ng-book-2-minibook.png">
+          ng-book 2
         </a>
-        <nav>
-          <a class="active"  href="#">Home</a>
-          <a href="profile.html">Profile</a>
-          <a href="login.html">Log in</a>
-          <a href="help.html">Help</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header item borderless">
+          <h1 class="ui header">
+            Angular 2 Inventory App
+          </h1>
+        </div>
       </div>
-    </header>
+    </div>
 
-    <main>
-      <div class="container">
-        <h2>Create Your own mini profile</h2>
-            <div class="info">
-                <p>
-                	<ul>
-                    <li>Let Users to create their own business card</li>
-                    <li>Share your profile with anyone</li>
-                    </ul>
-                </p>
-        		<button id="sign_up" onclick="location.href='login.html';"> Sign Up</button>
-                <p class="discover-portal"><a href="discover.html">or find out more</a></p>
-                <!--<p class="discover-portal"><a href="discovery.html">another version of discover page</a></p>-->
-            </div>
-            <div class="icons">
-            	<div class="camera">
-                	<img src="images/camera.PNG" alt="Choose your profile picture">
-                    <p>Choose your profile picture
-                    </p>
-                </div>
-                <div class="network">
-                <img src="images/network.PNG" alt="add network">
-                    <p>Add your Network</p>
-                </div>
-                <div class="share">
-                <img src="images/share.PNG" alt="share profile">
-                    <p>Share your profile</p>
-                </div>
-            </div>
+    <div class="ui main text container">
+      <inventory-app></inventory-app> <!-- <--- Our app loads here! -->
+    </div>
 
-     	 </div>
-    </main>
-
-    <footer>
-      <div class="address">
-        <h3>LOCATION</h3>
-        <a href="https://www.google.com/maps/place/California+State+University+Fullerton/@33.8829226,-117.8869261,15z/data=!4m6!1m3!3m2!1s0x0:0x2b9810bbb94af355!2sCalifornia+State+University+Fullerton!3m1!1s0x0:0x2b9810bbb94af355">
-          <h4>Cal State Fullerton</h4>
-          <p>800 N State College Blvd</p>
-          <p>Fullerton</p>
-          <p>CA 92831</p>
-        </a>
-      </div>
-      <div class="copyright">
-        <p>Copyright © Introverted Ibis | Spring 2016</p>
-      </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="js/app.js" type="text/javascript"></script>
   </body>
 </html>
