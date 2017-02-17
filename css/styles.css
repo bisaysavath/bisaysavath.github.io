@@ -1,0 +1,15 @@
+body div.ui.menu {
+    margin-top: 10px;
+}
+
+#profile-img {
+    height: 80px;
+    width: 80px;
+}
+
+body div.ui.main.body {
+    border: solid black;
+    border-width: 1px;
+    border-color: lightslategray;
+    border-radius: 5px;
+}
