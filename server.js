@@ -3,8 +3,11 @@
 "use strict";
 var express = require('express');
 var app = express();
+var port = process.env.PORT || 3000;
 
 // Server looks at the current directory
 app.use(express.static(__dirname));
 
-app.listen(3000);
+app.listen(port, function () {
+    console.log("Server is listening at port " + port);
+});
