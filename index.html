@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Standard Meta -->
         <meta charset="utf-8">
-        <title>Billy B. Saysavath</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content>
         <meta name="author" content>
 
+        <title>Billy B. Saysavath</title>
+
         <!-- Styles -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
         <link href="css/semantic.min.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" type="text/css" href="css/components/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/components/site.css">
+
+        <link rel="stylesheet" type="text/css" href="css/components/container.css">
+        <link rel="stylesheet" type="text/css" href="css/components/grid.css">
+        <link rel="stylesheet" type="text/css" href="css/components/header.css">
+        <link rel="stylesheet" type="text/css" href="css/components/image.css">
+        <link rel="stylesheet" type="text/css" href="css/components/menu.css">
+
+        <link rel="stylesheet" type="text/css" href="css/components/divider.css">
+        <link rel="stylesheet" type="text/css" href="css/components/list.css">
+        <link rel="stylesheet" type="text/css" href="css/components/segment.css">
+        <link rel="stylesheet" type="text/css" href="css/components/dropdown.css">
+        <link rel="stylesheet" type="text/css" href="css/components/icon.css">
+        <link rel="stylesheet" type="text/css" href="css/components/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="css/components/transition.css">
+
+        <script src="js/jquery-3.1.1.slim.min.js"></script>
+        <script src="css/components/transition.js"></script>
+        <script src="css/components/dropdown.js"></script>
+        <script src="css/components/visibility.js"></script>
+        <script src="css/components/sidebar.js"></script>
+        <script src="js/index.js"></script>
+
+        <script>
+        $(document)
+            .ready(function() {
+
+            // fix main menu to page on passing
+            $('.main.menu').visibility({
+                type: 'fixed'
+            });
+            $('.overlay').visibility({
+                type: 'fixed',
+                offset: 80
+            });
+
+            // lazy load images
+            $('.image').visibility({
+                type: 'image',
+                transition: 'vertical flip in',
+                duration: 500
+            });
+
+            // show dropdown on hover
+            $('.main.menu  .ui.dropdown').dropdown({
+                on: 'hover'
+            });
+            })
+        ;
+        </script>
+
     </head>
     <body>
         <div class="top-space"></div>
@@ -46,7 +103,7 @@
                     </a>
                 </div>
             </div>
-
+            
             <div class="ten wide column">
                 <h2 class="ui dividing header">Hello, there!</h2>
 
@@ -58,16 +115,22 @@
                     About me:
                 </h2>
                 <p>
-                    When I'm not outside swimming or snowboarding, you'll find me sitting in front of my MacBook reading articles, writing code or watching Youtube videos.<br>
+                    When I'm not outside swimming or snowboarding, you'll find me sitting in front of my MacBook reading tech articles, writing code and watching Youtube videos.<br>
                     <br>
-                    That sums up everything.
                 </p>
             </div>
 
-            <div class="three wide right column">
-
+        </div>
+        <div class="ui inverted vertical footer segment">
+            <div class="ui center aligned container">
+                <a href="http://semantic-ui.com/" target="_blank">
+                    <img src="/images/logo.png" class="ui centered mini image">
+                </a>
+                <div class="ui horizontal inverted small divided link list">
+                    <p>Designed using
+                    <a href="http://semantic-ui.com/" target="_blank">Semantic UI</a></p>
+                </div>
             </div>
-
         </div>
     </body>
 </html>
